@@ -25,6 +25,11 @@ body {
     display: none;
 }
 
+.conclusion {
+    margin-top: 40px;
+    text-indent: 10px;
+}
+
 div.content {
     margin: auto;
     padding: 20px;
