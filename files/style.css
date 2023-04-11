@@ -85,10 +85,18 @@ li span {
 }
 
 h1 {
-    letter-spacing: 0.7em;
+    letter-spacing: 0.4em;
     font-family: Arial, "sans serif";
     text-align: center;
     padding-left: 20px;
+}
+
+h1::before {
+    content:  "★ ";
+}
+
+h1::after {
+    content:  " ★";
 }
 
 p {
@@ -103,6 +111,16 @@ h3 {
 
 a {
     color: #6eb5c6;
+}
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub { 
+    top: 0.4em;
 }
 
 @media screen and (min-width: 800px) {
@@ -146,7 +164,7 @@ a {
     }
 
     h1 {
-        letter-spacing: 1.4em;
+        letter-spacing: 0.7em;
         padding-left: 0;
     }
 
