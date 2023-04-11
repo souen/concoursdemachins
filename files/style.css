@@ -17,6 +17,14 @@ body {
     z-index: 1;
 }
 
+.mobile {
+    display: inherit;
+}
+
+.no-mobile {
+    display: none;
+}
+
 div.content {
     margin: auto;
     padding: 20px;
@@ -92,6 +100,14 @@ a {
 }
 
 @media screen and (min-width: 800px) {
+    .mobile {
+        display: none;
+    }
+
+    .no-mobile {
+        display: inherit;
+    }
+
     h2, h2 span {
         text-align: left;
     }
