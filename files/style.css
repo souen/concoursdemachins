@@ -83,6 +83,7 @@ h1 {
     letter-spacing: 0.7em;
     font-family: Arial, "sans serif";
     text-align: center;
+    padding-left: 20px;
 }
 
 p {
@@ -141,6 +142,7 @@ a {
 
     h1 {
         letter-spacing: 1.4em;
+        padding-left: 0;
     }
 
     .poster img {
