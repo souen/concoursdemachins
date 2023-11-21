@@ -4,17 +4,9 @@ body {
     margin: 0;
 }
 
-.overlay {
-    background-image: url("affiche_web.jpg");
-    background-repeat: repeat-x;
-    background-size: contain;
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    opacity: 0.10;
-    z-index: 1;
+@font-face {
+    font-family: Monoton;
+    src: url('fonts/Monoton-Regular.ttf');
 }
 
 .mobile {
@@ -23,11 +15,6 @@ body {
 
 .no-mobile {
     display: none;
-}
-
-.conclusion {
-    margin-top: 40px;
-    text-indent: 10px;
 }
 
 div.content {
@@ -60,14 +47,100 @@ strong {
 }
 
 .poster img {
-    width: 60%;
     margin: auto;
     display: block;
-    border: 1px solid #938c8c;
+    /*border: 1px solid #938c8c;*/
+    width: 420px;
 }
 
-.col {
+.portrait {
+    width: 100%;
+}
 
+.portrait img {
+    width: 100%;
+}
+
+.conclusion {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.conclusion img {
+    max-width: 200px;
+}
+
+.letters-elevator {
+    display: flex;
+    align-items: center;
+}
+.letters-elevator .word {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+.letters-elevator .word:hover .char:nth-child(even) {
+    top: 20px;
+}
+.letters-elevator .word:hover .char:nth-child(odd) {
+    top: -20px;
+}
+.letters-elevator .char {
+    flex: 1;
+    position: relative;
+    display: inline-block;
+    top: 0;
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.letters-explode {
+    display: flex;
+    align-items: center;
+}
+.letters-explode .word {
+    width: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+.letters-explode .word:hover .char:nth-child(1) {
+    margin-top: -30px;
+    transform: rotate(-20deg);
+}
+.letters-explode .word:hover .char:nth-child(3) {
+    margin: -10px 0px 0 10px;
+    transform: rotate(12deg);
+}
+.letters-explode .word:hover .char:nth-child(5) {
+    margin: 15px 0 0 10px;
+    transform: rotate(-5deg);
+}
+.letters-explode .word:hover .char:nth-child(7) {
+    margin: -25px 0 0;
+    transform: rotate(5deg);
+}
+.letters-explode .word:hover .char:nth-child(9) {
+    margin: -33px 5px 0;
+    transform: rotate(19deg);
+}
+.letters-explode .word:hover .char:nth-child(11) {
+    margin: -35px 5px 0;
+    transform: rotate(-13deg);
+}
+.letters-explode .word:hover .char:nth-child(13) {
+    margin: -50px 5px 0;
+    transform: rotate(14deg);
+}
+.letters-explode .char {
+    flex: 1;
+    transition: 0.3s ease-in-out;
+    position: relative;
 }
 
 ul  {
@@ -80,15 +153,12 @@ li span {
     color: #424141;
 }
 
-.documents {
-    text-align: center;
-}
-
 h1 {
     letter-spacing: 0.2em;
-    font-family: Arial, "sans serif";
+    font-family: Monoton, "sans serif";
     text-align: center;
     padding-left: 20px;
+    font-size: 3em;
 }
 
 h1::before {
@@ -131,19 +201,12 @@ sub {
 
 @media screen and (min-width: 1040px) {
     div.content {
-        max-width: 1040px;
+        max-width: 800px;
         padding-top: 30px;
         display: grid;
         grid-template-columns: 1.5fr 1.5fr;
-    }
-
-    div.text {
         max-width: 600px;
         padding-left: 20px;
-    }
-
-    .poster {
-        max-width: 500px;
     }
 
     h1 {
@@ -157,9 +220,6 @@ sub {
         letter-spacing: 0.6em;
     }
 
-    div.text {
-        margin-left: 30px;
-    }
 }
 
 @media screen and (min-width: 800px) {
@@ -171,33 +231,10 @@ sub {
         display: inherit;
     }
 
-    h2, h2 span {
-        text-align: left;
-    }
-
-    .step2 {
-        padding-left: 110px;
-    }
-
-    .step3 {
-        padding-left: 220px;
-    }
-
-    .step4 {
-        padding-left: 380px;
-    }
-
     div.content {
-        max-width: 1000px;
+        max-width: 800px;
         padding-top: 30px;
-    }
-
-    div.text {
-        max-width: 600px;
-    }
-
-    div.content {
-        display: grid;
+        display: block;
         grid-template-columns: 1.4fr 1.6fr;
     }
 
@@ -206,7 +243,7 @@ sub {
     }
 
     .poster img {
-        width: 100%;
+        width: 420px;
     }
 
 }
