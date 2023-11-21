@@ -51,6 +51,14 @@ strong {
     display: block;
     /*border: 1px solid #938c8c;*/
     width: 420px;
+
+    flex: 1;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.titles:hover .poster img {
+    transform: rotate(-20deg);
 }
 
 .portrait {
@@ -82,10 +90,10 @@ strong {
     justify-content: center;
     height: 80%;
 }
-.letters-elevator .word:hover .char:nth-child(even) {
+.titles:hover .letters-elevator .word .char:nth-child(even) {
     top: 20px;
 }
-.letters-elevator .word:hover .char:nth-child(odd) {
+.titles:hover .letters-elevator .word .char:nth-child(odd) {
     top: -20px;
 }
 .letters-elevator .char {
@@ -109,31 +117,31 @@ strong {
     justify-content: center;
     height: 80%;
 }
-.letters-explode .word:hover .char:nth-child(1) {
+.titles:hover .letters-explode .word .char:nth-child(1) {
     margin-top: -30px;
     transform: rotate(-20deg);
 }
-.letters-explode .word:hover .char:nth-child(3) {
+.titles:hover .letters-explode .word .char:nth-child(3) {
     margin: -10px 0px 0 10px;
     transform: rotate(12deg);
 }
-.letters-explode .word:hover .char:nth-child(5) {
+.titles:hover .letters-explode .word .char:nth-child(5) {
     margin: 15px 0 0 10px;
     transform: rotate(-5deg);
 }
-.letters-explode .word:hover .char:nth-child(7) {
+.titles:hover .letters-explode .word .char:nth-child(7) {
     margin: -25px 0 0;
     transform: rotate(5deg);
 }
-.letters-explode .word:hover .char:nth-child(9) {
+.titles:hover .letters-explode .word .char:nth-child(9) {
     margin: -33px 5px 0;
     transform: rotate(19deg);
 }
-.letters-explode .word:hover .char:nth-child(11) {
+.titles:hover .letters-explode .word .char:nth-child(11) {
     margin: -35px 5px 0;
     transform: rotate(-13deg);
 }
-.letters-explode .word:hover .char:nth-child(13) {
+.titles:hover .letters-explode .word .char:nth-child(13) {
     margin: -50px 5px 0;
     transform: rotate(14deg);
 }
