@@ -1,3 +1,7 @@
+html {
+    scroll-behavior:smooth
+}
+
 body {
     color:  rgb(51, 51, 51);
     font-family: Helvetica;
@@ -42,6 +46,12 @@ strong {
     color:  #424141;
 }
 
+.menu {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
 .poster {
     padding-top: 25px;
 }
@@ -67,6 +77,47 @@ strong {
 
 .portrait img {
     width: 100%;
+}
+
+.map {
+    width: 100%;
+    background-image: url("files/fuller.png");
+    position: relative;
+    /*border: 2px dotted #c58c00;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spot {
+    position: absolute;
+    color: #c58c00;
+}
+
+.spot a {
+    color: #c58c00;
+    text-align: none;
+}
+
+.spot.bit {
+    font-size: 1.5em;
+}
+
+/*.spot span:first-of-type {
+  height: 5px;
+  width: 5px;
+  background-color: #c58c00;
+  border-radius: 50%;
+  display: inline-block;
+}
+*/
+.spot.antoine {
+    left: 70%;
+    top: 40%;
+}
+
+.spot.anatole {
+    left: 20%;
+    top: 70%;
 }
 
 .conclusion {
@@ -179,7 +230,7 @@ h1::after {
 
 p {
     line-height: 1.4em;
-    width: 70ch;
+    max-width: 70ch;
     margin-inline: auto;
 }
 
