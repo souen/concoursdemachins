@@ -52,8 +52,12 @@ strong {
     top: 20px;
 }
 
+p.intro_photos {
+    text-align: center;
+}
+
 img.intro {
-    width: 100%;
+    max-width: 80%;
 }
 
 .poster {
