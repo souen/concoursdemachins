@@ -47,23 +47,10 @@ strong {
     color:  #424141;
 }
 
-.titles {
-    padding-top: 60px; /* Size of the top fixed menu for <800 px (two lines) */
-}
-
 .menu {
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin: 0 0 20px 0;
     text-align: center;
     padding: 10px;
-    background-color: white;
-    z-index: 100;
-    border-bottom: 1px black dotted;
 }
-
-
 
 .menu li {
     display: inline;
@@ -260,16 +247,12 @@ sub {
         letter-spacing: 0.7em;
     }
 
-    .titles {
-        padding-top: 0;
-    }
-
     .menu {
+        position: fixed;
         right: 20px;
         top: 20px;
         left: inherit;
         text-align: right;
-        border-bottom: none;
     }
 
     .menu li {
@@ -281,10 +264,6 @@ sub {
 @media screen and (min-width: 800px) and (max-width: 1040px) {
     h1 {
         letter-spacing: 0.6em;
-    }
-
-    .titles {
-        padding-top: 30px; /* Size of the top fixed menu on one single line */
     }
 
 }
