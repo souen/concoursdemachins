@@ -56,6 +56,11 @@ strong {
     display: inline;
 }
 
+.focus li {
+    padding-left: 80px;
+    font-weight: bold;
+}
+
 p.intro_photos {
     text-align: center;
 }
