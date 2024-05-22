@@ -1,4 +1,4 @@
 # Velutile
 
-Static website for Intergalactic Self-constructed Cargo Bikes Tournament in Brittany, september 22-23 : www.velutile.org
+Static website for Intergalactic Self-constructed Cargo Bikes Tournament in Loir et Cher, september 21-22 : www.velutile.org
 
