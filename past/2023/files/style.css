@@ -56,6 +56,10 @@ strong {
     display: inline;
 }
 
+li.submenu {
+    font-size: 0.8em;
+}
+
 p.intro_photos {
     text-align: center;
 }
